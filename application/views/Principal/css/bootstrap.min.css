@@ -1038,7 +1038,7 @@ button,input,select,textarea {
 	line-height:inherit
 }
 a {
-	color:#337ab7;
+	color:#65B365;
 	text-decoration:none
 }
 a:focus,a:hover {
@@ -2704,8 +2704,8 @@ a.btn.disabled,fieldset[disabled] a.btn {
 }
 .btn-primary {
 	color:#fff;
-	background-color:#337ab7;
-	border-color:#2e6da4
+	background-color: #65B365;
+border-color: #0C5A0C;
 }
 .btn-primary.focus,.btn-primary:focus {
 	color:#fff;
