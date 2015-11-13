@@ -38,19 +38,25 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 				<div class="form-group">
 					
-					<input class="btn btn-primary" type="submit" value="Mostrar Mapa"></input>
+					<a href=""  class="btn btn-primary" >Mostrar Mapa</a>
+							
 				</div>
 
 				<div class="form-group" aling="center">
-					<input class="btn btn-primary" type="submit" value="Reservar Parqueadero"></input>
+					<a href=""  class="btn btn-primary" >Reservar Parqueadero</a>
+
+
 				</div>
 
 				<div class="form-group" aling="center">
-					<input class="btn btn-primary" type="submit" value="Desocupar Parqueadero"></input>
-				</div>
+					<a href=""  class="btn btn-primary" >Desocupar Parqueader</a>
+
+					</div>
 
 				<div class="form-group" aling="center">
-					<input class="btn btn-primary" type="submit" value="Parqueaderos Disponibles"></input>
+					<a href=""  class="btn btn-primary" >Parqueaderos Disponibles</a>
+
+
 				</div>
 
 				<div class="" aling="center">
