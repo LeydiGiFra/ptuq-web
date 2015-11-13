@@ -21,12 +21,15 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 	<div align="center" >
 	<input class="btn btn-primary" type="submit" value="Regresar"></input>
 	</div>
+	<br>
 	<div align="center" >                         
 	
 	    <a>
 	        <img  src="assets/img/mapa.png"  class="responsive" >
 	    </a>
     </div>
+    <br>
+	<br>
 
 		
 	
