@@ -15,9 +15,9 @@ class Principal_model extends CI_Model
 
     public function login( $username, $password)
     {
-    	this->db->where('username', $username);
-    	this->db->where('password', $password);
-    	$q=this->db->get('usuario');
+    	$this->db->where('user', $username);
+    	$this->db->where('password', $password);
+    	$q=$this->db->get('usuario');
 
     	if ($q->num_rows()>0) 
         {
