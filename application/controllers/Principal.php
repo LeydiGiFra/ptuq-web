@@ -1,7 +1,8 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Principal extends CI_Controller {
+if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class principal extends CI_Controller {
 
 	public function __construct()
 	{
@@ -28,13 +29,17 @@ class Principal extends CI_Controller {
 		{
 
 			$this->load->model('principal_model');
-			$user=$_POST['username'];
-			$pass=$_POST['password'];
-			if( $this->principal_model->login($user,$pass) ){
+			
+			if($this->principal_model->login($_POST['username'], $_POST['password']))
+			{
 				redirect('welcome');
-			}else{
-				redirect('principal#Bad');
 			}
+			else
+			{
+				redirect('principal_view#bad-password');
+			}
+			
+
 		}
 		
 		$this->load->view('principal_view');

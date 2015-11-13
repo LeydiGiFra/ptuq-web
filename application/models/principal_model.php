@@ -1,12 +1,14 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+if( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 /**
 * 
 */
-class principal_model extends CI_Model
+class Principal_model extends CI_Model
 {
-    public function method_name()
+    public $variable; 
+
+    public function __construct()
     {
     	parent::__construct();
     }
@@ -15,11 +17,14 @@ class principal_model extends CI_Model
     {
     	this->db->where('username', $username);
     	this->db->where('password', $password);
-    	$q = this->db->get('usuario');
+    	$q=this->db->get('usuario');
 
-    	if ($q->num_rows()>0) {
+    	if ($q->num_rows()>0) 
+        {
     		return true;
-    	} else {
+    	}
+        else 
+        {
     		return false;
     	}
     	
