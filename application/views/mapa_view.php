@@ -19,7 +19,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 	<br>
 
 	<div align="center" >
-	<input class="btn btn-primary" type="submit" value="Regresar"></input>
+		<a href="<?php echo base_url(); ?>sesion" class="btn btn-primary" > Regresar </a>
 	</div>
 	<br>
 	<div align="center" >                         
