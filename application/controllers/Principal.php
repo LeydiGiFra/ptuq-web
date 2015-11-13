@@ -7,20 +7,6 @@ class principal extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
- 
-		/*// Se carga el modelo de usuarios.
-		$this->load->model('users');
- 
-		// Se carga el helper url y form.
-		$this->load->helper('url');
-		$this->load->helper('form');
- 
-		// Se carga la libreria form_validation.
-		$this->load->library('form_validation');
- 
-		// Se le asigna a la informacion a la variable $user.
-		$this->user = @$this->session->userdata('logged_user');
-		*/
 	}
 
 	public function index()
