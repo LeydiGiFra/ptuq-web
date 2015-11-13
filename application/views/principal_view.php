@@ -28,7 +28,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 	<div class="fomu" align="center" >
 
 		<section class="left">
-    		<form class="formularioPrincipal" action="" method="">
+    		<form class="formularioPrincipal" action="" method="POST">
 							
 				<div class="form-group">
 					<label for ="user">Usuario </label>
