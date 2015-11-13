@@ -314,7 +314,10 @@ $config['cache_query_string'] = FALSE;
 | http://codeigniter.com/user_guide/libraries/encryption.html
 |
 */
-$config['encryption_key'] = '';
+//
+// md5("uniquindio") = 6373f5a3e2734c61376b44f8310a345a
+//
+$config['encryption_key'] = '6373f5a3e2734c61376b44f8310a345a';
 
 /*
 |--------------------------------------------------------------------------
