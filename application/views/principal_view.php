@@ -40,13 +40,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					<input class="form-control" type="password" placeholder="Ingrese su Contrase&ntilde;a" id="pass" name="password"></input>
 				</div>
 
-					<input class="btn btn-primary" type="submit" value="Iniciar sesion"></input>
+					<input class="btn btn-primary" type="submit" value="Iniciar sesión"></input>
 
 			</form>
 		</section>
 
 		<section>
-			Para el uso de esta aplicación Son necesario los datos de 
+			Para el uso de esta aplicación son necesario los datos de 
 			<a href="https://academu.uniquindio.edu.co:8443/uniquindio/portal/home_1/htm/login.jsp" target="_blank" >Academusoft</a>
 		</section>
 	</div>
