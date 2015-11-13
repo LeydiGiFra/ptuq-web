@@ -1,7 +1,4 @@
-body
-{
-	background: ;
-}
+
 
 .imagenes
 {
@@ -11,4 +8,10 @@ body
 .fomu
 {
 margin-top: 17px;
+}
+
+.cerrar
+{
+	color: #000;
+
 }
