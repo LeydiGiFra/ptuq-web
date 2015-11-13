@@ -11,7 +11,7 @@ class principal extends CI_Controller {
 	public function index() {
 
 		if( ! $this->session->userdata('username') ){
-			redirect('welcome');
+			redirect('sesion');
 		}
 
 		if ( isset($_POST['password']) ) {
@@ -24,10 +24,10 @@ class principal extends CI_Controller {
 			if( $this->principal_model->login($user, $pass) ) {
 				
 				$this->session->set_userdata('username', $user);
-				redirect('welcome');
+				redirect('sesion');
 			}
 			else {
-				redirect('principal#bad-password');
+				redirect('principal');
 			}
 			
 
@@ -37,7 +37,7 @@ class principal extends CI_Controller {
 	}
 
 	public function logout(){
-		$this->session->sess_destroy();
+		$this->session->session_destroy();
 		redirect('principal');
 	}
 }

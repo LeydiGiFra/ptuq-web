@@ -54,7 +54,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 				</div>
 
 				<div class="" aling="center">
-					<a href="<?php echo base_url(); ?>Principal/logout">Cerrar sesion</a>
+					<a href="<?php echo base_url(); ?>principal/logout">Cerrar sesion</a>
 		
 				</div>
 					
