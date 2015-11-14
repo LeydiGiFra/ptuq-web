@@ -38,7 +38,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 				<div class="form-group">
 					
-					<a href=""  class="btn btn-primary" >Mostrar Mapa</a>
+					<a href="<?php echo base_url(); ?>mapa"  class="btn btn-primary" >Mostrar Mapa</a>
 							
 				</div>
 
