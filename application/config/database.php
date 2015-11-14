@@ -74,10 +74,10 @@ $active_group = 'default';
 $query_builder = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = 'root';
-$db['default']['password'] = '';
-$db['default']['database'] = 'uniquindio';
-$db['default']['dbdriver'] = 'MySQLi';
+$db['default']['username'] = 'u803155544_roger';
+$db['default']['password'] = 'R402Jncqec';
+$db['default']['database'] = 'u803155544_uq';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = TRUE;
