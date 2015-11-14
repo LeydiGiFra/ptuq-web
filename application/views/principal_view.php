@@ -17,7 +17,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 </head>
 <body>
 	
-
+	<br>
 	<div align="center">                         
 	    <a>
 	        <img src="assets/img/logo_uq.png"  class="img-responsive" >
