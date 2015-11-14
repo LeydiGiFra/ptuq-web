@@ -16,6 +16,11 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 </head>
 <body>
+<<<<<<< HEAD
+=======
+	
+	<br>
+>>>>>>> origin/master
 	<div align="center">                         
 		<br>
 	    <a>
