@@ -2,7 +2,7 @@
 
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class sesion extends CI_Controller {
+class parqueaderoreserva extends CI_Controller {
 
 	public function __construct()
 	{
@@ -15,7 +15,7 @@ class sesion extends CI_Controller {
 			redirect('principal');
 		}
 
-		$this->load->view('sesion_view');
+		$this->load->view('parqueaderoreserva_view');
 	}
 
 }

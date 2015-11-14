@@ -8,7 +8,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Pagina Principal - PTUQ</title>
+	<title>Reservar Bahia</title>
 
 	<!-- Bootstrap -->
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
@@ -16,49 +16,58 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 </head>
 <body>
-	<div align="center"> 
-		<br>
+	<div align="center">                         
+	    <br>
 	    <a>
 	        <img src="assets/img/logo_uq.png"  class="img-responsive" >
 	    </a>
     </div>
 
-    <div class="form-group" align="center">
-    	<br>
-	   	<h4>Bienvenido a nuestro aplicativo de asistencia de parqueo!</h4>	
-	</div>
-		
 	<div class="fomu" align="center" >
 
 		<section class="left">
-    		<form class="Sesion" action="" method="POST">
+    		<form class="parqueaderos" action="" method="POST">
 				
+				<div class="form-group" aling="center">
+					<h2><b>Reservar una Bahia de Parqueo</a></h2>
+				</div>
+
+				<div class="form-group" aling="center">
+					<select name="facultad" id="facultad">
+						<OPTION >Elegir Facultad</OPTION>
+						<OPTION VALUE="Ciencias Basícas" >Ciencias Básicas</OPTION>
+						<OPTION VALUE="Economía" 	>Economía 	</OPTION>
+						<OPTION VALUE="Ingeniería"	>Ingeniería </OPTION>
+						<OPTION VALUE="Medicina"	>Medicina 	</OPTION>
+
+				    	<!-- // Codigo para implementar las lista de facultades desde la base de datos
+				    	//<?php
+						//	foreach ($arrFacultades as $i => $facultad)
+						//		echo '<option values="',$i,'">',$facultad,'</option>';
+						//?> -->
+					</select>
+
+				</div>
+
 				<div class="form-group">
-					<a href="<?php echo base_url(); ?>mapa"  class="btn btn-primary" >Mostrar Mapa</a>			
+					<label for ="placa">Placa del Vehiculo </label>
+					<input class="form-control" placeholder="Ingrese la Placa del Vehiculo" id="placa" name="placa" minlength="5" maxlength="10"></input>
 				</div>
 
-				<div class="form-group" aling="center">
-					<a href="<?php echo base_url(); ?>parqueaderoreserva"  class="btn btn-primary" >Reservar Parqueadero</a>
+				<div align="center" >
+					<input class="btn btn-primary" type="submit" value="Reservar"></input>
 				</div>
 
-				<div class="form-group" aling="center">
-					<a href="<?php echo base_url(); ?>parqueaderodesocupa"  class="btn btn-primary" >Desocupar Parqueader</a>
+				<br>
+				<br>
 
-				</div>
-
-				<div class="form-group" aling="center">
-					<a href="<?php echo base_url(); ?>parqueadero"  class="btn btn-primary" >Parqueaderos Disponibles</a>
-				</div>
-
-				<div class="" aling="center">
-					<a href="<?php echo base_url(); ?>principal/logout">Cerrar sesion</a>
-		
+				<div align="center" >
+					<a href="<?php echo base_url(); ?>sesion" class="btn btn-primary" > Cancelar </a>
 				</div>
 				
 			</form>
 		</section>
-
-		
+	
 	</div>
 	
 	<div align="right">

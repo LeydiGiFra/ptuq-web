@@ -8,7 +8,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Pagina Principal</title>
+	<title>Explorador del Mapa</title>
 
 	<!-- Bootstrap -->
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
@@ -16,23 +16,23 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 </head>
 <body>
-	<br>
-
 	<div align="center" >
+	<br>
 		<a href="<?php echo base_url(); ?>sesion" class="btn btn-primary" > Regresar </a>
 	</div>
-	<br>
+		<br>
 	<div align="center" >                         
-	
 	    <a>
 	        <img  src="assets/img/mapa.png"  class="responsive" >
 	    </a>
+    	<br>
     </div>
-    <br>
-	<br>
-
-		
 	
+	<div align="right">
+		<section>
+			Version: BETA
+		</section>
+	</div>
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

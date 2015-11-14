@@ -8,7 +8,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Inicio de Sesión - PTUQ</title>
+	<title>Cantidad Bahias Disponibles</title>
 
 	<!-- Bootstrap -->
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
@@ -17,50 +17,47 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 </head>
 <body>
 	<div align="center">                         
-		<br>
+	    <br>
 	    <a>
 	        <img src="assets/img/logo_uq.png"  class="img-responsive" >
 	    </a>
     </div>
 
-
 	<div class="fomu" align="center" >
 
 		<section class="left">
-    		<form class="formularioPrincipal" action="" method="POST">
-							
-				<div class="form-group">
-					<label for ="user">Usuario </label>
-					<input class="form-control" placeholder="Ingrese su Usuario" id="user" name="username"></input>
+    		<form class="parqueaderos" action="" method="POST">
+				
+				<div class="form-group" aling="center">
+					<h2><b>Parqueaderos Disponibles</a></h2>
 				</div>
 
 				<div class="form-group" aling="center">
-					<label for ="password">Contraseña </label>
-					<input class="form-control" type="password" placeholder="Ingrese su Contrase&ntilde;a" id="pass" name="password"></input>
+					<h4><b> En la Facultad de <?php $facultad; ?>, existen  <?php $cantidad; ?> bahias de parqueo libres.  </a></h4>
 				</div>
 
-					<input class="btn btn-primary" type="submit" value="Iniciar sesión"></input>
+				<div align="center" >
+					<a href="<?php echo base_url(); ?>parqueadero" class="btn btn-primary" type="submit"> Otra Facultad? </a>
+				</div>
 
+				<br>
+				<br>
+
+				<div align="center" >
+					<a href="<?php echo base_url(); ?>sesion" class="btn btn-primary" > Regresar </a>
+				</div>
+				
 			</form>
 		</section>
-
-		<section>
-			<br>
-			<h3>NOTA</h3> Para el uso de esta aplicación en nuestra fase <h4>BETA</h4> se trabajara con una Base de Datos privada.
-		</section>
-
-		<section>
-			<br>
-			Para el uso de esta aplicación son necesario los datos de 
-			<a href="https://academu.uniquindio.edu.co:8443/uniquindio/portal/home_1/htm/login.jsp" target="_blank" >Academusoft</a>
-		</section>
+	
 	</div>
-
+	
 	<div align="right">
 		<section>
 			Version: BETA
 		</section>
 	</div>
+
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
