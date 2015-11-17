@@ -23,39 +23,58 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 	    </a>
     </div>
 
+
 	<div class="fomu" align="center" >
 
 		<section class="left">
-    		<form class="parqueaderos" action="" method="POST">
+
+			<?php if(isset($mensaje)) :?>
+			<h2><?= $mensaje?></h2>
+		<?php endif;?>
+    		<form class="parqueaderos" action="<?= base_url().'carro/registro_very'?>" method="POST">
 				
 				<div class="form-group" aling="center">
 					<h2><b>Reservar una Bahia de Parqueo</a></h2>
 				</div>
 
-				<div class="form-group" aling="center">
-					<select name="facultad" id="facultad">
-						<OPTION >Elegir Facultad</OPTION>
-						<OPTION VALUE="Ciencias Basícas" >Ciencias Básicas</OPTION>
-						<OPTION VALUE="Economía" 	>Economía 	</OPTION>
-						<OPTION VALUE="Ingeniería"	>Ingeniería </OPTION>
-						<OPTION VALUE="Medicina"	>Medicina 	</OPTION>
-
-				    	<!-- // Codigo para implementar las lista de facultades desde la base de datos
-				    	//<?php
-						//	foreach ($arrFacultades as $i => $facultad)
-						//		echo '<option values="',$i,'">',$facultad,'</option>';
-						//?> -->
-					</select>
-
+				
+				<div class="form-group">
+					<label for ="facultad">Ingrese facultad </label>
+					<input  value="<?= @set_value('facultad')?>"class="form-control" placeholder="Ingrese Facultad" id="facultad" name="facultad" minlength="5" maxlength="10"></input>
 				</div>
 
 				<div class="form-group">
 					<label for ="placa">Placa del Vehiculo </label>
-					<input class="form-control" placeholder="Ingrese la Placa del Vehiculo" id="placa" name="placa" minlength="5" maxlength="10"></input>
+					<input  value="<?= @set_value('placa')?>" class="form-control" placeholder="Ingrese la Placa del Vehiculo" id="placa" name="placa" minlength="5" maxlength="10"></input>
 				</div>
 
+				<div class="form-group">
+					
+					<select name="hora" id="hora">
+						<OPTION >Elegir Hora</OPTION>
+						<OPTION >7</OPTION>
+						<OPTION >8</OPTION>
+						<OPTION >9</OPTION>
+						<OPTION >10</OPTION>
+						<OPTION >11</OPTION>
+						<OPTION >12</OPTION>
+						<OPTION >13</OPTION>
+						<OPTION >14</OPTION>
+						<OPTION >15</OPTION>
+						<OPTION >16</OPTION>
+						<OPTION >17</OPTION>
+						<OPTION >18</OPTION>
+						<OPTION >19</OPTION>
+					</select>
+					<label for ="nada">:</label>
+					<select name="minuto" id="minuto">
+						<OPTION >00</OPTION>
+						
+					</select>
+					</div>
+
 				<div align="center" >
-					<input class="btn btn-primary" type="submit" value="Reservar"></input>
+					<input class="btn btn-primary" name="submit_reg" type="submit" value="Reservar"></input>
 				</div>
 
 				<br>
@@ -81,5 +100,9 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script> 
+
+   <hr/>
+   <?= validation_errors();?>
+
 </body>
 </html>

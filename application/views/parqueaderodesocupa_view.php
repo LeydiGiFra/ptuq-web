@@ -26,7 +26,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 	<div class="fomu" align="center" >
 
 		<section class="left">
-    		<form class="parqueaderos" action="" method="POST">
+    		<form class="parqueaderos" action="<?= base_url().'carro/eliminar_very'?>"  method="POST">
 				
 				<div class="form-group" aling="center">
 					<h2><b>Desocupar Bahia de Parqueo</a></h2>
@@ -38,7 +38,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 				</div>
 
 				<div align="center" >
-					<input class="btn btn-primary" type="submit" value="Desocupar"></input>
+					<input name="submit_reg" class="btn btn-primary" type="submit" value="Desocupar"></input>
 				</div>
 
 				<br>
