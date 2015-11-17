@@ -34,11 +34,15 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 				<div class="form-group">
 					<label for ="placa">Placa del Vehiculo </label>
-					<input class="form-control" placeholder="Ingrese la Placa del Vehiculo" id="placa" name="placa" minlength="5" maxlength="10"></input>
+					<input class="form-control"  placeholder="Ingrese la Placa del Vehiculo" id="placa" name="placa" minlength="5" maxlength="10"></input>
 				</div>
 
 				<div align="center" >
+<<<<<<< HEAD
 					<input name="submit_reg" class="btn btn-primary" type="submit" value="Desocupar"></input>
+=======
+					<input class="btn btn-primary" type="submit" value="Desocupar" name="submit_reg"></input>
+>>>>>>> origin/master
 				</div>
 
 				<br>

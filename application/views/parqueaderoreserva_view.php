@@ -14,7 +14,17 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
     <link href="<?php echo base_url(); ?>assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?php echo base_url(); ?>assets/css/estilos.css" rel="stylesheet"  type="text/css">
 
+
+
 </head>
+
+	
+					<script type="text/javascript">
+				function alerta()
+				{
+					alerta("Se ingreso correctamente el carro");
+				}
+				</script>
 <body>
 	<div align="center">                         
 	    <br>
@@ -74,7 +84,12 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 					</div>
 
 				<div align="center" >
+<<<<<<< HEAD
 					<input class="btn btn-primary" name="submit_reg" type="submit" value="Reservar"></input>
+=======
+					<input onclick="alerta()" class="btn btn-primary" name="submit_reg" type="submit" value="Reservar"></input>
+				
+>>>>>>> origin/master
 				</div>
 
 				<br>
