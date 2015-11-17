@@ -55,6 +55,7 @@ class Carro extends CI_Controller
 				$this->carro_model->eliminar_carro($placa);
 				$data = array('mensaje'=>'El Carro se Elimino correctamente');
 				$this->load->view('parqueaderodesocupa_view', $data);
+				redirect('parqueaderodesocupa');
 			}
 			
 
