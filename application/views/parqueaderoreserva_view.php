@@ -48,27 +48,11 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 					<label for ="facultad">Ingrese facultad </label>
 					<input  value="<?= @set_value('facultad')?>"class="form-control" placeholder="Ingrese Facultad" id="facultad" name="facultad" minlength="5" maxlength="10"></input>
 
-				<div class="form-group" aling="center">
-					<select name="facultad" id="facultad">
-						<OPTION VALUE="Elegir Facultad"		>Elegir Facultad</OPTION>
-						<OPTION VALUE="Ciencias Basícas" 	>Ciencias Básicas</OPTION>
-						<OPTION VALUE="Economía" 			>Economía 	</OPTION>
-						<OPTION VALUE="Ingeniería"			>Ingeniería </OPTION>
-						<OPTION VALUE="Medicina"			>Medicina 	</OPTION>
-
-				    	<!-- // Codigo para implementar las lista de facultades desde la base de datos
-				    	//<?php
-						//	foreach ($arrFacultades as $i => $facultad)
-						//		echo '<option values="',$i,'">',$facultad,'</option>';
-						//?> -->
-					</select>
-
-
-				</div>
-
+				
+					<br>
 				<div class="form-group" align="center" >
 					<label for ="placa">Placa del Vehiculo </label>
-
+					<br>
 					<input  value="<?= @set_value('placa')?>" class="form-control" placeholder="Ingrese la Placa del Vehiculo" id="placa" name="placa" minlength="5" maxlength="10"></input>
 				</div>
 
@@ -92,24 +76,20 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 					</select>
 					<label for ="nada">:</label>
 					<select name="minuto" id="minuto">
-						<OPTION >00</OPTION>
+					<OPTION >00</OPTION>
 						
 					</select>
 					</div>
 
 				<div align="center" >
-					<input class="btn btn-primary" name="submit_reg" type="submit" value="Reservar"></input>
+					
 
-					<input class="form-control" placeholder="Ingrese la Placa del Vehiculo" id="placa" name="placa" minlength="5" maxlength="6" requerid></input>
-					<br>
-					<input class="btn btn-primary" type="submit" value="Reservar"></input>
+				
+					<input class="btn btn-primary" name="submit_reg" type="submit" value="Reservar"></input>
 
 				</div>
 
-				<!-- <div class="form-group alert alert-warning alert-dismissable">
-				  <button type="button" class="close" data-dismiss="alert">&times;</button>
-				  <strong>¡Cuidado!</strong> Es muy importante que leas este mensaje de alerta.
-				</div> -->
+			
 
 				<br>
 				<br>
