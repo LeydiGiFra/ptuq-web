@@ -11,35 +11,31 @@ class parqueadero_model extends CI_Model
     	parent::__construct();
     }
 
-    /*
+    
     public function facultades(){
         
-        $query = $this->db-> query('SELECT DISTINCT facultad FROM parqueadero');
-
-        // si hay resultados
-        if ($query->num_rows() > 0) {
-        
-            almacenamos en una matriz bidimensional
-            foreach($query->result() as $row)
-               $arrDatos[htmlspecialchars($row->id_profesion, ENT_QUOTES)] = htmlspecialchars($row->profesion, ENT_QUOTES);
-
-            $query->free_result();
-            return $arrDatos;
-        }
         $this->db->distinct('facultad');
-        $disponibles=$this->db->get('parqueadero');
+        $consulta=$this->db->get('parqueadero');
+        $disponibles=$consulta->result();
         
         return $disponibles;
     }
-    */
+    
     
     public function contarBahiasDisponibles($facultad){
 
+        log_message('info', 'The purpose of some variable is to provide some value.');
+        log_message('info', $facultad);
+
     	$this->db->where('facultad', $facultad);
         $this->db->where('estado', 'disponible');
-    	$q=$this->db->get('parqueadero');
+    	$this->db->from('parqueadero');
+        
+        $resultado=$this->db->count_all_results();
+        
+        echo $resultado;
 
-    	return $q->num_rows();
+        return $resultado;
     }
 
     public function reservarbahia($facultad, $placa){

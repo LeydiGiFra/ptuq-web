@@ -18,21 +18,18 @@ class parqueaderosdisponibles extends CI_Controller {
 		}
 
 		$datos=null;
+
 		if ( isset($_POST['facultad']) ) {
-			$facultad=$_POST['facultad'];
+			$this->load->model('parqueadero_model');
 			
+			$facultad = $_POST['facultad'];
+			$cantidad = $this->parqueadero_model->contarBahiasDisponibles($facultad);
+			echo "Puestos disponibles" + $cantidad;
 			$datos['facultad'] = $facultad;
-			$datos['cantidad'] = $this->contarparqueaderos($facultad);
+			$datos['cantidad'] = $cantidad;
 		}
 
 		$this->load->view('parqueaderosdisponibles_view',$datos);
-	}
-
-	public function contarparqueaderos($facultad)
-	{
-		$this->load->model('parqueadero_model');
-			
-		return $this->parqueadero_model->contarBahiasDisponibles($facultad);
 	}
 
 }
