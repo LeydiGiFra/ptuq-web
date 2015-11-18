@@ -38,7 +38,7 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 				</div>
 
 				<div align="center" >
-					<input name="submit_reg" class="btn btn-primary" type="submit" value="Desocupar"></input>
+					<input name="submit_regs" class="btn btn-primary" type="submit" value="Desocupar"></input>
 				</div>
 
 				<br>

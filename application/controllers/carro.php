@@ -46,19 +46,15 @@ class Carro extends CI_Controller
 
 	public function eliminar_very()
 	{
-		
-		if($this->input->POST('submit_reg'))
+		$this->form_validation->set_rules('placa', 'placa', 'required');
+
+		if($this->input->POST('submit_regs'))
 		{
-				if($this->form_validation->run()!=TRUE)
-			{
 				$placa=$_POST['placa'];
 				$this->carro_model->eliminar_carro($placa);
-				$data = array('mensaje'=>'El Carro se Elimino correctamente');
-				$this->load->view('parqueaderodesocupa_view', $data);
-				redirect('parqueaderodesocupa');
-			}
-			
-
+				$data1 = array('mensaje'=>'El Carro se Elimino correctamente');
+				$this->load->view('parqueaderodesocupa_view', $data1);
+				
 		}
 	}
 
