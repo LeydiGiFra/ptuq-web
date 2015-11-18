@@ -32,9 +32,9 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 		<section class="left">
     		<form class="Sesion" action="" method="POST">
-				
-				<div class="form-group">
-					<a href="<?php echo base_url(); ?>mapa"  class="btn btn-primary" >Mostrar Mapa</a>			
+
+				<div class="form-group" aling="center">
+					<a href="<?php echo base_url(); ?>parqueadero"  class="btn btn-primary" >Parqueaderos Disponibles</a>
 				</div>
 
 				<div class="form-group" aling="center">
@@ -45,9 +45,9 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 					<a href="<?php echo base_url(); ?>parqueaderodesocupa"  class="btn btn-primary" >Desocupar Parqueader</a>
 
 				</div>
-
-				<div class="form-group" aling="center">
-					<a href="<?php echo base_url(); ?>parqueadero"  class="btn btn-primary" >Parqueaderos Disponibles</a>
+				
+				<div class="form-group">
+					<a href="<?php echo base_url(); ?>mapa"  class="btn btn-primary" >Mostrar Mapa</a>			
 				</div>
 
 				<div class="" aling="center">
