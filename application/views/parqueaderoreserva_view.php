@@ -28,26 +28,26 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 	<div class="fomu" align="center" >
 
 		<section class="left">
-<<<<<<< Updated upstream
+
 
 			<?php if(isset($mensaje)) :?>
 			<h2><?= $mensaje?></h2>
 		<?php endif;?>
     		<form class="parqueaderos" action="<?= base_url().'carro/registro_very'?>" method="POST">
-=======
+
     		<form class="parqueadero" action="" method="POST" onsubmit="return revisar()" >
->>>>>>> Stashed changes
+
 				
 				<div class="form-group" aling="center">
 					<h2><b>Reservar una Bahia de Parqueo</a></h2>
 				</div>
 
-<<<<<<< Updated upstream
+
 				
 				<div class="form-group">
 					<label for ="facultad">Ingrese facultad </label>
 					<input  value="<?= @set_value('facultad')?>"class="form-control" placeholder="Ingrese Facultad" id="facultad" name="facultad" minlength="5" maxlength="10"></input>
-=======
+
 				<div class="form-group" aling="center">
 					<select name="facultad" id="facultad">
 						<OPTION VALUE="Elegir Facultad"		>Elegir Facultad</OPTION>
@@ -63,12 +63,12 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 						//?> -->
 					</select>
 
->>>>>>> Stashed changes
+
 				</div>
 
 				<div class="form-group" align="center" >
 					<label for ="placa">Placa del Vehiculo </label>
-<<<<<<< Updated upstream
+
 					<input  value="<?= @set_value('placa')?>" class="form-control" placeholder="Ingrese la Placa del Vehiculo" id="placa" name="placa" minlength="5" maxlength="10"></input>
 				</div>
 
@@ -99,11 +99,11 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 				<div align="center" >
 					<input class="btn btn-primary" name="submit_reg" type="submit" value="Reservar"></input>
-=======
+
 					<input class="form-control" placeholder="Ingrese la Placa del Vehiculo" id="placa" name="placa" minlength="5" maxlength="6" requerid></input>
 					<br>
 					<input class="btn btn-primary" type="submit" value="Reservar"></input>
->>>>>>> Stashed changes
+
 				</div>
 
 				<!-- <div class="form-group alert alert-warning alert-dismissable">
