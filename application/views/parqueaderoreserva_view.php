@@ -73,11 +73,15 @@ if (!defined('BASEPATH')) exit('No direct script access allowed');
 						<OPTION >17</OPTION>
 						<OPTION >18</OPTION>
 						<OPTION >19</OPTION>
+						<OPTION >20</OPTION>
+						<OPTION >21</OPTION>
 					</select>
 					<label for ="nada">:</label>
 					<select name="minuto" id="minuto">
-					<OPTION >00</OPTION>
-						
+						<OPTION >00</OPTION>
+						<OPTION >15</OPTION>
+						<OPTION >30</OPTION>
+						<OPTION >45</OPTION>
 					</select>
 					</div>
 
